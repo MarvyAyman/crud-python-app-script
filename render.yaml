@@ -1,1 +1,11 @@
+services:
+  - type: web
+    name: fastapi-json-crud
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PORT
+        value: "10000" # optional, Render auto-assigns PORT if not provided
 
