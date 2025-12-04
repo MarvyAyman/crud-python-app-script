@@ -1,0 +1,4 @@
+credentials.json
+db.json
+*.pyc
+__pycache__/
