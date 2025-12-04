@@ -219,9 +219,9 @@ class PolymarketLogger:
             start_row = existing_rows + 1
             for idx, row in enumerate(rows_to_add):
                 row_num = start_row + idx
-                self.apply_flag_color(row_num, 8, row[7])   # threshold1
-                self.apply_flag_color(row_num, 9, row[8])   # threshold2
-                self.apply_flag_color(row_num, 10, row[9])  # threshold3
+                #self.apply_flag_color(row_num, 8, row[7])   # threshold1
+                #self.apply_flag_color(row_num, 9, row[8])   # threshold2
+                #self.apply_flag_color(row_num, 10, row[9])  # threshold3
                 
                 # Safety delay to avoid quota limits (every 10 rows)
                 if (idx + 1) % 10 == 0:
@@ -278,4 +278,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
